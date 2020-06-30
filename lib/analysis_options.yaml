@@ -43,6 +43,7 @@ analyzer:
     file_names: error
     hash_and_equals: error
     implementation_imports: error
+    include_file_not_found: error
     invalid_literal_annotation: error
     invalid_override_different_default_values_named: error
     invalid_required_named_param: error
