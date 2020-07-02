@@ -48,6 +48,7 @@ analyzer:
     invalid_override_different_default_values_named: error
     invalid_required_named_param: error
     invalid_required_optional_positional_param: error
+    invalid_required_positional_param: error
     invalid_use_of_protected_member: error
     iterable_contains_unrelated_type: error
     library_names: error
