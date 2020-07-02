@@ -1,4 +1,9 @@
-## [0.2.0] - Jun 30, 2020
+## [0.2.0+1] - Jul 02, 2020
+
+* Fixed README.md
+* Fixed CHANGELOG.md
+
+## [0.2.0] - Jul 02, 2020
 
 * Added invalid_required_positional_param: error
 
