@@ -8,7 +8,7 @@ The Dart analyzer settings with stricter linter rules that allow you to write mo
 
 ```yaml
 dev_dependencies:
-  strict_analyzer: ^0.1.0
+  strict_analyzer: ^0.2.0
 ```
 
 - Place an `analysis_options.yaml` at the root of your package.
