@@ -1,3 +1,7 @@
+## [0.2.1+1] - Jul 05, 2020
+
+* Removed a meaningless example.
+
 ## [0.2.1] - Jul 04, 2020
 
 * Changed prefer_constructors_over_static_methods: warning
