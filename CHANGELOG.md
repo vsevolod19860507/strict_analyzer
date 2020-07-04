@@ -1,3 +1,7 @@
+## [0.2.1] - Jul 04, 2020
+
+* Changed prefer_constructors_over_static_methods: warning
+
 ## [0.2.0+1] - Jul 02, 2020
 
 * Fixed README.md
