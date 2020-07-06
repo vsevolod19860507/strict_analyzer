@@ -1,4 +1,8 @@
-## [0.2.1+1] - Jul 05, 2020
+## [0.2.1+2] - Jul 06, 2020
+
+* Fixed CHANGELOG.md
+
+## [0.2.1+1] - Jul 04, 2020
 
 * Removed a meaningless example.
 
