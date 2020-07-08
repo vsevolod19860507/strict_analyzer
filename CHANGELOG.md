@@ -1,3 +1,7 @@
+## [0.2.1+3] - Jul 08, 2020
+
+* Deleted one_member_abstracts
+
 ## [0.2.1+2] - Jul 06, 2020
 
 * Fixed CHANGELOG.md

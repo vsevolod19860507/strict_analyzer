@@ -280,7 +280,9 @@ linter:
     # ???????????????????????????????????????
     # - omit_local_variable_types # https://dart-lang.github.io/linter/lints/omit_local_variable_types.html
     
-    - one_member_abstracts # https://dart-lang.github.io/linter/lints/one_member_abstracts.html
+    # If I need interface with one method?
+    # - one_member_abstracts # https://dart-lang.github.io/linter/lints/one_member_abstracts.html
+   
     - only_throw_errors # https://dart-lang.github.io/linter/lints/only_throw_errors.html
     - overridden_fields # https://dart-lang.github.io/linter/lints/overridden_fields.html
     
