@@ -1,3 +1,19 @@
+## [0.3.0] - Aug 06, 2020
+
+* The minimum version of Dart SDK is now 2.9.
+* strict-inference: true
+* strict-raw-types: true
+* use_is_even_rather_than_modulo: info
+* sized_box_for_whitespace: warning
+* exhaustive_cases: error
+* missing_enum_constant_in_switch: error
+* inference_failure_on_collection_literal: error
+* inference_failure_on_function_return_type: error
+* inference_failure_on_instance_creation: error
+* inference_failure_on_uninitialized_variable: error
+* inference_failure_on_untyped_parameter: error
+* strict_raw_type: error
+
 ## [0.2.1+3] - Jul 08, 2020
 
 * Deleted one_member_abstracts

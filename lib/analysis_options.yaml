@@ -1,18 +1,22 @@
 # https://dart.dev/guides/language/analysis-options
-# https://github.com/tenhobi/effective_dart/blob/master/lib/analysis_options.1.2.0.yaml
 # https://github.com/dart-lang/sdk/blob/master/pkg/analyzer/lib/error/error.dart
 # https://pub.dev/packages/linter
 # https://dart-lang.github.io/linter/lints/
 # https://dart-lang.github.io/linter/lints/options/options.html
+# https://github.com/dart-lang/sdk/tree/d15b04ad04c13c83fd5abfcea6abd2650e848bb0/pkg/analyzer/test/src/diagnostics
 
 # https://github.com/dart-lang/sdk/blob/master/CHANGELOG.md
 
-# linter 0.1.114 | 0.1.117
+# linter 0.1.117 | 0.1.117
 
 analyzer:
   strong-mode:
     implicit-casts: false
     implicit-dynamic: false
+
+  language:
+    strict-inference: true
+    strict-raw-types: true
 
   errors:
     always_declare_return_types: error
@@ -40,10 +44,16 @@ analyzer:
     curly_braces_in_flow_control_structures: error
     equal_elements_in_set: error
     equal_keys_in_map: error
+    exhaustive_cases: error
     file_names: error
     hash_and_equals: error
     implementation_imports: error
     include_file_not_found: error
+    inference_failure_on_collection_literal: error
+    inference_failure_on_function_return_type: error
+    inference_failure_on_instance_creation: error
+    inference_failure_on_uninitialized_variable: error
+    inference_failure_on_untyped_parameter: error
     invalid_literal_annotation: error
     invalid_override_different_default_values_named: error
     invalid_required_named_param: error
@@ -54,10 +64,12 @@ analyzer:
     library_names: error
     library_prefixes: error
     list_remove_unrelated_type: error
+    missing_enum_constant_in_switch: error
     missing_required_param: error
     missing_return: error
     missing_whitespace_between_adjacent_strings: error
     must_be_immutable: error
+    # no_default_cases: error
     no_duplicate_case_values: error
     non_const_call_to_literal_constructor: error
     non_constant_identifier_names: error
@@ -79,6 +91,7 @@ analyzer:
     prefer_void_to_null: error
     recursive_getters: error
     slash_for_doc_comments: error
+    strict_raw_type: error
     test_types_in_equals: error
     throw_in_finally: error
     unawaited_futures: error
@@ -119,6 +132,7 @@ analyzer:
     prefer_null_aware_operators: warning
     prefer_spread_collections: warning
     provide_deprecation_message: warning
+    sized_box_for_whitespace: warning
     unnecessary_await_in_return: warning
     unnecessary_getters_setters: warning
     unnecessary_lambdas: warning
@@ -226,17 +240,14 @@ linter:
     # - diagnostic_describe_all_properties # https://dart-lang.github.io/linter/lints/diagnostic_describe_all_properties.html
     
     - directives_ordering # https://dart-lang.github.io/linter/lints/directives_ordering.html
-    
-    # unsupported
+  
+    # ???????????????????????????????????????
     # - do_not_use_environment # https://dart-lang.github.io/linter/lints/do_not_use_environment.html
     
     - empty_catches # https://dart-lang.github.io/linter/lints/empty_catches.html
     - empty_constructor_bodies # https://dart-lang.github.io/linter/lints/empty_constructor_bodies.html
     - empty_statements # https://dart-lang.github.io/linter/lints/empty_statements.html
-    
-    # unsupported
-    # - exhaustive_cases # https://dart-lang.github.io/linter/lints/exhaustive_cases.html
-    
+    - exhaustive_cases # https://dart-lang.github.io/linter/lints/exhaustive_cases.html
     - file_names # https://dart-lang.github.io/linter/lints/file_names.html
     
     # ???????????????????????????????????????
@@ -265,7 +276,7 @@ linter:
     
     # - no_adjacent_strings_in_list # https://dart-lang.github.io/linter/lints/no_adjacent_strings_in_list.html
     
-    # unsupported
+    # ???????????????????????????????????????
     # - no_default_cases # https://dart-lang.github.io/linter/lints/no_default_cases.html
     
     - no_duplicate_case_values # https://dart-lang.github.io/linter/lints/no_duplicate_case_values.html
@@ -347,10 +358,7 @@ linter:
     # - public_member_api_docs # https://dart-lang.github.io/linter/lints/public_member_api_docs.html
     
     - recursive_getters # https://dart-lang.github.io/linter/lints/recursive_getters.html
-
-    # unsupported
-    # - sized_box_for_whitespace # https://dart-lang.github.io/linter/lints/sized_box_for_whitespace.html
-    
+    - sized_box_for_whitespace # https://dart-lang.github.io/linter/lints/sized_box_for_whitespace.html
     - slash_for_doc_comments # https://dart-lang.github.io/linter/lints/slash_for_doc_comments.html
     
     # ???????????????????????????????????????
@@ -400,9 +408,7 @@ linter:
    
     - use_full_hex_values_for_flutter_colors # https://dart-lang.github.io/linter/lints/use_full_hex_values_for_flutter_colors.html
     - use_function_type_syntax_for_parameters # https://dart-lang.github.io/linter/lints/use_function_type_syntax_for_parameters.html
-    
-    # unsupported
-    # - use_is_even_rather_than_modulo # https://dart-lang.github.io/linter/lints/use_is_even_rather_than_modulo.html
+    - use_is_even_rather_than_modulo # https://dart-lang.github.io/linter/lints/use_is_even_rather_than_modulo.html
 
     # ???????????????????????????????????????
     - use_key_in_widget_constructors # https://dart-lang.github.io/linter/lints/use_key_in_widget_constructors.html
