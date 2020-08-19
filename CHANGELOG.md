@@ -1,3 +1,7 @@
+## [0.3.1] - Aug 19, 2020
+
+* cascade_invocations: info
+
 ## [0.3.0] - Aug 06, 2020
 
 * The minimum version of Dart SDK is now 2.9.

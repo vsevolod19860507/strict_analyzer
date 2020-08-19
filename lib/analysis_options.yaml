@@ -7,7 +7,7 @@
 
 # https://github.com/dart-lang/sdk/blob/master/CHANGELOG.md
 
-# linter 0.1.117 | 0.1.117
+# linter 0.1.117
 
 analyzer:
   strong-mode:
@@ -220,10 +220,7 @@ linter:
     - camel_case_extensions # https://dart-lang.github.io/linter/lints/camel_case_extensions.html
     - camel_case_types # https://dart-lang.github.io/linter/lints/camel_case_types.html
     - cancel_subscriptions # https://dart-lang.github.io/linter/lints/cancel_subscriptions.html
-
-    # Problems with void
-    # - cascade_invocations # https://dart-lang.github.io/linter/lints/cascade_invocations.html
-
+    - cascade_invocations # https://dart-lang.github.io/linter/lints/cascade_invocations.html
     - close_sinks # https://dart-lang.github.io/linter/lints/close_sinks.html
     
     # ???????????????????????????????????????
