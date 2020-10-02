@@ -1,3 +1,14 @@
+## [0.4.0] - Oct 02, 2020
+
+* The minimum version of Dart SDK is now 2.10.
+* Linter 0.1.118
+* prefer_single_quotes: info
+* unnecessary_nullable_for_final_variable_declarations: info
+* hash_and_equals: warning
+* use_late_for_private_fields_and_variables: warning
+* prefer_asserts_in_initializer_lists: warning
+* no_logic_in_create_state: error
+
 ## [0.3.1] - Aug 19, 2020
 
 * cascade_invocations: info

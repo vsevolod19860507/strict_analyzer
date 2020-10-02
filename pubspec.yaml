@@ -1,7 +1,7 @@
 name: strict_analyzer
 description: The Dart analyzer settings with stricter linter rules that allow you to write more maintainable code and improve performance.
-version: 0.3.1
+version: 0.4.0
 homepage: https://github.com/vr19860507/strict_analyzer
 
 environment:
-  sdk: ">=2.9.0 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"

@@ -7,7 +7,10 @@
 
 # https://github.com/dart-lang/sdk/blob/master/CHANGELOG.md
 
-# linter 0.1.117
+# linter 0.1.118
+
+# TODO meta lints
+
 
 analyzer:
   strong-mode:
@@ -46,7 +49,6 @@ analyzer:
     equal_keys_in_map: error
     exhaustive_cases: error
     file_names: error
-    hash_and_equals: error
     implementation_imports: error
     include_file_not_found: error
     inference_failure_on_collection_literal: error
@@ -71,6 +73,7 @@ analyzer:
     must_be_immutable: error
     # no_default_cases: error
     no_duplicate_case_values: error
+    no_logic_in_create_state: error
     non_const_call_to_literal_constructor: error
     non_constant_identifier_names: error
     null_aware_in_condition: error
@@ -86,7 +89,6 @@ analyzer:
     prefer_equal_for_default_values: error
     prefer_generic_function_type_aliases: error
     prefer_mixin: error
-    prefer_single_quotes: error
     prefer_typing_uninitialized_variables: error
     prefer_void_to_null: error
     recursive_getters: error
@@ -111,11 +113,13 @@ analyzer:
     cancel_subscriptions: warning
     close_sinks: warning
     dead_code: warning
+    deprecated_member_use: warning
     empty_catches: warning
+    hash_and_equals: warning
     invariant_booleans: warning
     literal_only_boolean_expressions: warning
-    no_logic_in_create_state: warning
     no_runtimeType_toString: warning
+    prefer_asserts_in_initializer_lists: warning
     prefer_const_constructors: warning
     prefer_const_constructors_in_immutables: warning
     prefer_const_declarations: warning
@@ -140,6 +144,7 @@ analyzer:
     unnecessary_null_in_if_null_operators: warning
     unnecessary_overrides: warning
     unnecessary_statements: warning
+    use_late_for_private_fields_and_variables: warning
     use_string_buffers: warning
 
 linter:
@@ -383,6 +388,10 @@ linter:
     - unnecessary_new # https://dart-lang.github.io/linter/lints/unnecessary_new.html
     - unnecessary_null_aware_assignments # https://dart-lang.github.io/linter/lints/unnecessary_null_aware_assignments.html
     - unnecessary_null_in_if_null_operators # https://dart-lang.github.io/linter/lints/unnecessary_null_in_if_null_operators.html
+    
+    # ???????????????????????????????????????
+    - unnecessary_nullable_for_final_variable_declarations # https://dart-lang.github.io/linter/lints/unnecessary_nullable_for_final_variable_declarations.html
+    
     - unnecessary_overrides # https://dart-lang.github.io/linter/lints/unnecessary_overrides.html
     - unnecessary_parenthesis # https://dart-lang.github.io/linter/lints/unnecessary_parenthesis.html
     
@@ -410,6 +419,9 @@ linter:
     # ???????????????????????????????????????
     - use_key_in_widget_constructors # https://dart-lang.github.io/linter/lints/use_key_in_widget_constructors.html
     
+    # ???????????????????????????????????????
+    - use_late_for_private_fields_and_variables # https://dart-lang.github.io/linter/lints/use_late_for_private_fields_and_variables.html
+
     # ???????????????????????????????????????
     # - use_raw_strings # https://dart-lang.github.io/linter/lints/use_raw_strings.html
     
