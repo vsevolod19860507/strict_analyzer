@@ -1,3 +1,7 @@
+## [0.5.0+2] - Dec 03, 2020
+
+* lib fixed.
+
 ## [0.5.0+1] - Dec 03, 2020
 
 * Example fixed.
