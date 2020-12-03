@@ -10,6 +10,7 @@
 # linter 0.1.118
 
 # TODO meta lints
+# TODO undefined_shown_name
 
 
 analyzer:
@@ -28,7 +29,6 @@ analyzer:
     avoid_catches_without_on_clauses: error
     avoid_catching_errors: error
     avoid_equals_and_hash_code_on_mutable_classes: error
-    # avoid_implementing_value_types: error
     avoid_renaming_method_parameters: error
     avoid_returning_null: error
     avoid_returning_null_for_future: error
@@ -114,6 +114,7 @@ analyzer:
     close_sinks: warning
     dead_code: warning
     deprecated_member_use: warning
+    do_not_use_environment: warning
     empty_catches: warning
     hash_and_equals: warning
     invariant_booleans: warning
@@ -159,36 +160,19 @@ linter:
     # - avoid_as # https://dart-lang.github.io/linter/lints/avoid_as.html
     - avoid_bool_literals_in_conditional_expressions # https://dart-lang.github.io/linter/lints/avoid_bool_literals_in_conditional_expressions.html
     - avoid_catches_without_on_clauses # https://dart-lang.github.io/linter/lints/avoid_catches_without_on_clauses.html
-    
-    # ???????????????????????????????????????
     - avoid_catching_errors # https://dart-lang.github.io/linter/lints/avoid_catching_errors.html
-    
     - avoid_classes_with_only_static_members # https://dart-lang.github.io/linter/lints/avoid_classes_with_only_static_members.html
     # - avoid_double_and_int_checks # https://dart-lang.github.io/linter/lints/avoid_double_and_int_checks.html
     - avoid_empty_else # https://dart-lang.github.io/linter/lints/avoid_empty_else.html
-    
-    # ???????????????????????????????????????
     - avoid_equals_and_hash_code_on_mutable_classes # https://dart-lang.github.io/linter/lints/avoid_equals_and_hash_code_on_mutable_classes.html
-    
-    # ???????????????????????????????????????
     # - avoid_escaping_inner_quotes # https://dart-lang.github.io/linter/lints/avoid_escaping_inner_quotes.html
-
-    # ???????????????????????????????????????
     - avoid_field_initializers_in_const_classes # https://dart-lang.github.io/linter/lints/avoid_field_initializers_in_const_classes.html
-
-    # ???????????????????????????????????????
     # - avoid_function_literals_in_foreach_calls # https://dart-lang.github.io/linter/lints/avoid_function_literals_in_foreach_calls.html
-    
-    # ???????????????????????????????????????
     # - avoid_implementing_value_types # https://dart-lang.github.io/linter/lints/avoid_implementing_value_types.html
-    
     - avoid_init_to_null # https://dart-lang.github.io/linter/lints/avoid_init_to_null.html
     # - avoid_js_rounded_ints # https://dart-lang.github.io/linter/lints/avoid_js_rounded_ints.html
     - avoid_null_checks_in_equality_operators # https://dart-lang.github.io/linter/lints/avoid_null_checks_in_equality_operators.html
-    
-    # ???????????????????????????????????????
     # - avoid_positional_boolean_parameters # https://dart-lang.github.io/linter/lints/avoid_positional_boolean_parameters.html
-    
     # - avoid_print # https://dart-lang.github.io/linter/lints/avoid_print.html
     - avoid_private_typedef_functions # https://dart-lang.github.io/linter/lints/avoid_private_typedef_functions.html
     - avoid_redundant_argument_values # https://dart-lang.github.io/linter/lints/avoid_redundant_argument_values.html
@@ -198,71 +182,63 @@ linter:
     - avoid_returning_null # https://dart-lang.github.io/linter/lints/avoid_returning_null.html
     - avoid_returning_null_for_future # https://dart-lang.github.io/linter/lints/avoid_returning_null_for_future.html
     - avoid_returning_null_for_void # https://dart-lang.github.io/linter/lints/avoid_returning_null_for_void.html
-    
-    # ???????????????????????????????????????
     - avoid_returning_this # https://dart-lang.github.io/linter/lints/avoid_returning_this.html
-    
     # - avoid_setters_without_getters # https://dart-lang.github.io/linter/lints/avoid_setters_without_getters.html
     - avoid_shadowing_type_parameters # https://dart-lang.github.io/linter/lints/avoid_shadowing_type_parameters.html
-    # - avoid_single_cascade_in_expression_statements # https://dart-lang.github.io/linter/lints/avoid_single_cascade_in_expression_statements.html
-    
-    # ???????????????????????????????????????
+    - avoid_single_cascade_in_expression_statements # https://dart-lang.github.io/linter/lints/avoid_single_cascade_in_expression_statements.html
     - avoid_slow_async_io # https://dart-lang.github.io/linter/lints/avoid_slow_async_io.html
-    
     - avoid_types_as_parameter_names # https://dart-lang.github.io/linter/lints/avoid_types_as_parameter_names.html
-    
-    # Problems with contravariance
-    # - avoid_types_on_closure_parameters # https://dart-lang.github.io/linter/lints/avoid_types_on_closure_parameters.html
-   
+    - avoid_types_on_closure_parameters # https://dart-lang.github.io/linter/lints/avoid_types_on_closure_parameters.html
     - avoid_unnecessary_containers # https://dart-lang.github.io/linter/lints/avoid_unnecessary_containers.html
     - avoid_unused_constructor_parameters # https://dart-lang.github.io/linter/lints/avoid_unused_constructor_parameters.html
     - avoid_void_async # https://dart-lang.github.io/linter/lints/avoid_void_async.html
-    
-    # ???????????????????????????????????????
     - avoid_web_libraries_in_flutter # https://dart-lang.github.io/linter/lints/avoid_web_libraries_in_flutter.html
-    
     - await_only_futures # https://dart-lang.github.io/linter/lints/await_only_futures.html
     - camel_case_extensions # https://dart-lang.github.io/linter/lints/camel_case_extensions.html
     - camel_case_types # https://dart-lang.github.io/linter/lints/camel_case_types.html
     - cancel_subscriptions # https://dart-lang.github.io/linter/lints/cancel_subscriptions.html
     - cascade_invocations # https://dart-lang.github.io/linter/lints/cascade_invocations.html
     - close_sinks # https://dart-lang.github.io/linter/lints/close_sinks.html
-    
-    # ???????????????????????????????????????
     - comment_references # https://dart-lang.github.io/linter/lints/comment_references.html
-   
     - constant_identifier_names # https://dart-lang.github.io/linter/lints/constant_identifier_names.html
-    
-    # ???????????????????????????????????????
     - control_flow_in_finally # https://dart-lang.github.io/linter/lints/control_flow_in_finally.html
-    
     - curly_braces_in_flow_control_structures # https://dart-lang.github.io/linter/lints/curly_braces_in_flow_control_structures.html
-    
-    # ???????????????????????????????????????
     # - diagnostic_describe_all_properties # https://dart-lang.github.io/linter/lints/diagnostic_describe_all_properties.html
-    
     - directives_ordering # https://dart-lang.github.io/linter/lints/directives_ordering.html
-  
-    # ???????????????????????????????????????
-    # - do_not_use_environment # https://dart-lang.github.io/linter/lints/do_not_use_environment.html
-    
+    - do_not_use_environment # https://dart-lang.github.io/linter/lints/do_not_use_environment.html
     - empty_catches # https://dart-lang.github.io/linter/lints/empty_catches.html
     - empty_constructor_bodies # https://dart-lang.github.io/linter/lints/empty_constructor_bodies.html
     - empty_statements # https://dart-lang.github.io/linter/lints/empty_statements.html
     - exhaustive_cases # https://dart-lang.github.io/linter/lints/exhaustive_cases.html
     - file_names # https://dart-lang.github.io/linter/lints/file_names.html
-    
-    # ???????????????????????????????????????
     # - flutter_style_todos # https://dart-lang.github.io/linter/lints/flutter_style_todos.html
-    
-    # Problem with inheritance 
     - hash_and_equals # https://dart-lang.github.io/linter/lints/hash_and_equals.html
-    
-    # ???????????????????????????????????????
     - implementation_imports # https://dart-lang.github.io/linter/lints/implementation_imports.html
-    
     - invariant_booleans # https://dart-lang.github.io/linter/lints/invariant_booleans.html
     - iterable_contains_unrelated_type # https://dart-lang.github.io/linter/lints/iterable_contains_unrelated_type.html
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     # ???????????????????????????????????????
     - join_return_with_assignment # https://dart-lang.github.io/linter/lints/join_return_with_assignment.html

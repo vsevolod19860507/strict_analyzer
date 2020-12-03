@@ -1,3 +1,9 @@
+## [0.5.0] - Dec 03, 2020
+
+* avoid_single_cascade_in_expression_statements: info
+* avoid_types_on_closure_parameters: info
+* do_not_use_environment: warning
+
 ## [0.4.0+2] - Oct 04, 2020
 
 * Fixed README.md
