@@ -1,3 +1,7 @@
+## [0.5.0+1] - Dec 03, 2020
+
+* Example fixed.
+
 ## [0.5.0] - Dec 03, 2020
 
 * avoid_single_cascade_in_expression_statements: info
