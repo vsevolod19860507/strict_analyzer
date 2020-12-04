@@ -12,7 +12,7 @@ Also you can read about [supported Lint Rules](https://dart-lang.github.io/linte
 
 ```yaml
 dev_dependencies:
-  strict_analyzer: ^0.5.0
+  strict_analyzer: ^0.6.0
 ```
 
 - Place an `analysis_options.yaml` at the root of your package.
